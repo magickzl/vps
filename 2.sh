@@ -37,3 +37,4 @@ EOF'
 
 # 重启 fail2ban 服务以应用更改
 sudo systemctl restart fail2ban
+read -p "Press Enter to exit"
