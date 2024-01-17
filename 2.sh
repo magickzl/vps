@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# 安装 fail2ban
-sudo apt install -y fail2ban
 
 # 切换到 fail2ban 配置目录
 cd /etc/fail2ban
