@@ -42,3 +42,5 @@ EOF'
 
 # 重启 fail2ban 服务以应用更改
 sudo systemctl restart fail2ban
+
+sudo fail2ban-client status sshd
