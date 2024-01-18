@@ -19,7 +19,7 @@ ignoreip = 127.0.0.1/8 ::1
 bantime = 1h
 findtime = 1m
 maxretry = 3
-banaction = firewallcmd-ipset
+banaction = iptables-multiport
 action = %(action_mwl)s
 #DEFAULT配置结束
 
@@ -31,7 +31,7 @@ sudo bash -c 'cat << EOF >> jail.local
 [sshd]
 enabled = true
 filter = sshd
-port = 22
+port = 10022
 maxretry = 3
 findtime = 60
 bantime = -1
