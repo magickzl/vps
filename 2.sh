@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo -i
+
 # 修改SSH默认端口
 # 你可以将2222替换为你希望的端口号
 NEW_SSH_PORT=10022
@@ -12,6 +14,8 @@ sudo sed -i "s/#Port 22/Port $NEW_SSH_PORT/" /etc/ssh/sshd_config
 
 # 重启SSH服务
 sudo systemctl restart ssh
+
+apt update
 
 # 安装Fail2Ban
 sudo apt install -y fail2ban
